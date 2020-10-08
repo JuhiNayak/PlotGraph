@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "208713588101",
+    "firebase_url": "https://cmpe297-hw1.firebaseio.com",
+    "project_id": "cmpe297-hw1",
+    "storage_bucket": "cmpe297-hw1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208713588101:android:6c680e7b441e60f945b8ec",
+        "android_client_info": {
+          "package_name": "com.example.plotgraph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208713588101-0esagk3uj2s2sl88j7s8ac5v87ii201c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnnIV77lVbZKj0Kwm73S2_X92f1og84BY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208713588101-0esagk3uj2s2sl88j7s8ac5v87ii201c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

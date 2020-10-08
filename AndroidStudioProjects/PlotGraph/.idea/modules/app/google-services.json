@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "825885130017",
+    "firebase_url": "https://plotgraph-7790d.firebaseio.com",
+    "project_id": "plotgraph-7790d",
+    "storage_bucket": "plotgraph-7790d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825885130017:android:bb7ad6151c11a2e30c9260",
+        "android_client_info": {
+          "package_name": "com.example.plotgraph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825885130017-tnubpdqa2m9a1bv3725av9fmbth0ppbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plotgraph",
+            "certificate_hash": "5e1afd502b1c5cf2a485368fdd609575b8dcf749"
+          }
+        },
+        {
+          "client_id": "825885130017-1h7bfcs6uau69t2fm0r7b7bi7dcrirc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBySpN3hnzTqbtKaJsQKiawaYJxC8-zKNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825885130017-1h7bfcs6uau69t2fm0r7b7bi7dcrirc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

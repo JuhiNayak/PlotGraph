@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlotGraph</string>
+    <string name="bar_chart" />
+    <string name="radar_chart">radar_chart</string>
+    <string name="pie_chart">pie_chart</string>
+    <string name="line_chart">Line Chart</string>
+</resources>
