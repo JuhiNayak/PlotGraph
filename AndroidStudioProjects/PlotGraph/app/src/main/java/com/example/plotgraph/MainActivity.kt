@@ -17,6 +17,12 @@ import org.json.JSONObject
 
 
 class MainActivity : AppCompatActivity() {
+
+    companion object{
+        val db = FirebaseFirestore.getInstance()
+        var i = -1
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,9 +35,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupLineChartHumidity() {
         val yVals = ArrayList<Entry>()
-
-        var i = 0
-        val db = FirebaseFirestore.getInstance()
 
         db.collection("cloud-functions-firestore")
             .get()
@@ -46,7 +49,6 @@ class MainActivity : AppCompatActivity() {
 
                 val set1: LineDataSet
                 set1 = LineDataSet(yVals, "DataSet 1")
-                println(message = "Set1: $set1")
 
                 set1.color = Color.BLUE
                 set1.setCircleColor(Color.BLUE)
@@ -58,10 +60,8 @@ class MainActivity : AppCompatActivity() {
 
                 val dataSets = ArrayList<ILineDataSet>()
                 dataSets.add(set1)
-                println(message = "dataset: $dataSets")
-                val data = LineData(dataSets)
-                println(message = "LineData $data")
 
+                val data = LineData(dataSets)
                 // set data
                 lineChart.setData(data)
                 lineChart.description.isEnabled = false
@@ -82,9 +82,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupBarChartTemp() {
         // create BarEntry for Bar Group
 
-        val db = FirebaseFirestore.getInstance()
         val bargroup = ArrayList<BarEntry>()
-        var i = -1
 
         db.collection("cloud-functions-firestore")
             .get()
@@ -99,12 +97,10 @@ class MainActivity : AppCompatActivity() {
 
                 // creating dataset for Bar Group
                 val barDataSet = BarDataSet(bargroup, "Bar DataSet")
-                println(message = "Bar DataSet: $barDataSet")
 
                 barDataSet.color = ContextCompat.getColor(this, R.color.amber)
 
                 val data = BarData(barDataSet)
-                println(message = "Bar Data: $data")
                 barChart.setData(data)
                 barChart.xAxis.position = XAxis.XAxisPosition.BOTTOM
                 barChart.xAxis.labelCount = i
